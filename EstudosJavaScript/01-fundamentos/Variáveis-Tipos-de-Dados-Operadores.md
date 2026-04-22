@@ -84,6 +84,7 @@ Em JavaScript, os operadores aritméticos são usados para realizar operações 
 - `*`: Multiplicação
 - `/`: Divisão
 - `%`: Módulo (resto da divisão)
+- `**`: Exponenciação (potenciação)
 
 ### **Exemplos:**
 
@@ -127,6 +128,10 @@ Os operadores de comparação são usados para comparar valores e retornar um va
 - `<`: Menor que
 - `>=`: Maior ou igual a
 - `<=`: Menor ou igual a
+
+> `===`: Estritamente igual a (compara valor e tipo), ou seja, retorna `true` apenas se os valores e os tipos forem iguais.
+
+> `!==`: Estritamente diferente de (compara valor e tipo), ou seja, retorna `true` apenas se os valores ou os tipos forem diferentes.
 
 ### **Exemplos:**
 
@@ -185,4 +190,11 @@ console.log(x); // Output: undefined
 ```javascript
 let y = null;
 console.log(y); // Output: null
+```
+
+> NaN: Significa "Not a Number" (Não é um número) e é o resultado de operações matemáticas inválidas, como dividir zero por zero ou tentar converter uma string que não representa um número em um valor numérico. Por exemplo:
+
+```javascript
+let resultado = 0 / 0;
+console.log(resultado); // Output: NaN
 ```

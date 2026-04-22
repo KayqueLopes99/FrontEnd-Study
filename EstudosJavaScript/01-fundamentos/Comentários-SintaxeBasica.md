@@ -26,3 +26,15 @@ de várias linhas
 | `\t`              | Tabulação                | `"Nome:\tJoão"`        |
 | `\\`             | Barra invertida          | `"C:\\Users\\João"`
 | `\"`             | Aspas duplas             | `"Ele disse: \"Oi!\""` |
+
+
+### Compilar:
+- f8 para compilar o código e ver o resultado no console do navegador.
+
+- node nomeDoArquivo.js para executar um arquivo JavaScript usando o Node.js no terminal.
+
+``` js
+npm i prompt-sync
+npm init -y      
+node program.js
+```

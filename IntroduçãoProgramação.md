@@ -41,3 +41,8 @@ if (numero % 2 === 0) {
 - *Algoritmo*: é uma sequência de passos ou instruções que descrevem como realizar uma tarefa específica. Ele é a base para a programação, pois é a partir do algoritmo que o código é escrito. Um algoritmo pode ser representado de várias formas, como em pseudocódigo, fluxogramas ou diretamente em código de programação.
 
 - *Abstração*: é o processo de simplificar um problema complexo, focando apenas nos aspectos essenciais e ignorando os detalhes desnecessários. 
+
+---
+![](image/image.png)
+
+---
