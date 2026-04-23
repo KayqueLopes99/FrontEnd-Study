@@ -118,6 +118,12 @@ x /= 6; // x = x / 6 (x é atualizado para 4)
 x %= 3; // x = x % 3 (x é atualizado para 1)
 ```
 
+### Incremento e Decremento
+- `++`: Incremento (aumenta o valor em 1)
+- `--`: Decremento (diminui o valor em 1)
+
+
+
 ### **Operadores de Comparação**
 
 Os operadores de comparação são usados para comparar valores e retornar um valor booleano (`true` ou `false`).

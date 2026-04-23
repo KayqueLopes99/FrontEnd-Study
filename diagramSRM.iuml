@@ -1,0 +1,174 @@
+@startuml
+' Configurações de Layout
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+skinparam monochrome false
+skinparam shadowing true
+skinparam packageStyle rectangle
+
+' Ajustes de espaçamento para máxima proximidade
+skinparam nodesep 50
+skinparam ranksep 50
+
+' =========================================
+' 1. CONTROL (GERENCIADORES) - NO TOPO
+' =========================================
+package "Control (Lógica de Negócio)" #E8F5E9 {
+    class GerenciadorSalao <<Control>> {
+        + listarMesas(): List<Mesa>
+        + cadastrarMesa(mesa: Mesa): void
+        + removerMesa(idMesa: int): void
+        + atualizarStatusMesa(mesa: Mesa): void
+        + monitorarPainelSalao(): void
+    }
+
+    class GerenciadorCardapio <<Control>> {
+        + gerenciarCategorias(): void
+        + cadastrarProduto(p: Produto): void
+        + removerProduto(id: int): void
+        + editarProduto(p: Produto): void
+        + controlarDisponibilidade(id: int, status: boolean): void
+        + listarProdutosTecnico(): List<Produto>
+        + consultarCardapioPublico(): List<Produto>
+    }
+
+    class GerenciadorPedido <<Control>> {
+        + registrarPedido(mesa: Mesa, p: Pedido): void
+        + cancelarItemPedido(item: ItemPedido): void
+        + acompanharFilaCozinha(): List<Pedido>
+        + atualizarStatusProducao(p: Pedido): void
+        + visualizarDetalhesParaCozinha(p: Pedido): void
+    }
+
+    class GerenciadorFinanceiro <<Control>> {
+        + visualizarConsumoMesa(idMesa: int): double
+        + processarSolicitacaoFechamento(): void
+        + validarPagamentoConfirmado(p: Pedido): void
+        + gerarRelatorioHistoricoVendas(): void
+    }
+}
+
+' =========================================
+' 2. ENTITY (ENTIDADES) - ABAIXO
+' =========================================
+package "Entity (Estrutura de Dados)" #FFF9C4 {
+    abstract class Usuario <<Entity>> {
+      - idUsuario: int
+      - nome: String
+      - senha: String
+      - email: String
+      - perfil: TipoUsuario
+      + autenticar(): boolean
+      + atualizarDados(): void
+    }
+    
+    class Cliente {
+      - telefone: String
+      + realizarAutoCadastro(): void
+    }
+    
+    class Gerente {
+      + cadastrarFuncionario(func: Usuario): void
+    }
+    
+    class Cozinheiro {
+      - turno: String
+      - especialidade: String
+    }
+
+    class Mesa {
+      - idMesa: int
+      - numero: int
+      - capacidade: int
+      - status: StatusMesa
+    }
+
+    class Pedido {
+      - idPedido: int
+      - status: StatusPedido
+      - totalAcumulado: Double
+      - formaPagamento: TipoPagamento
+    }
+
+    class Produto {
+      - idProduto: int
+      - nome: String
+      - preco: Double
+      - disponivel: Boolean
+    }
+    
+    class ItemPedido {
+      - quantidade: int
+      - observacao: String
+    }
+
+    class Categoria {
+      - idCategoria: int
+      - nome: String
+    }
+}
+
+' =========================================
+' 3. ENUMS (COLADOS AO LADO DAS ENTIDADES)
+' =========================================
+' Posicionados à direita das entidades para facilitar a leitura dos tipos
+package "Tipos Fixos" #F5F5F5 {
+    enum TipoUsuario {
+        CLIENTE
+        COZINHEIRO
+        GERENTE
+    }
+
+    enum StatusMesa {
+        LIVRE
+        OCUPADA
+        AGUARDANDO_PAGAMENTO
+    }
+
+    enum StatusPedido {
+        RECEBIDO
+        EM_PREPARO
+        PRONTO
+        FINALIZADO
+        CANCELADO
+    }
+
+    enum TipoPagamento {
+        DINHEIRO
+        CARTAO_CREDITO
+        CARTAO_DEBITO
+        PIX
+    }
+}
+
+' =========================================
+' RELACIONAMENTOS E ALINHAMENTO
+' =========================================
+
+' Força os Enums a ficarem à direita do pacote Entity
+"Entity (Estrutura de Dados)" -[hidden]right- "Tipos Fixos"
+
+' Dependências dos Gerenciadores (Ajustadas para evitar cruzamento)
+GerenciadorSalao -down[#darkgreen]..> Mesa
+GerenciadorCardapio -down[#darkgreen]..> Produto
+GerenciadorPedido -down[#darkgreen]..> Pedido
+GerenciadorFinanceiro -down[#darkgreen]..> Pedido
+
+' Herança
+Usuario <|-down- Cliente
+Usuario <|-down- Cozinheiro
+Usuario <|-down- Gerente
+
+' Relacionamentos entre Entidades
+' Invertendo a ordem de declaração (Produto para Categoria) o texto vai para a DIREITA da linha vertical
+Produto " 1..* " -up- " 1 " Categoria : "   contém " <
+Pedido " 0..* " -up- " 1 " Mesa : " possui " <
+Pedido " 0..* " -up- " 1 " Cliente : " realiza " <
+
+' Composição: ItemPedido para Pedido (Texto à DIREITA)
+ItemPedido " 1..* " -up-* " 1 " Pedido : " composto por " <
+
+' Associação Horizontal: ItemPedido para Produto (Seta para ESQUERDA como na imagem)
+ItemPedido " * " -- " 1 " Produto : " refere-se a " >
+
+@enduml

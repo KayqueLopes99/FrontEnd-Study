@@ -157,3 +157,22 @@ let totalLiquido = totalBruto - (totalBruto * desconto)
 > As variáveis declaradas com let dentro de blocos if ou for não podem ser acessadas de fora destes blocos.
 
 > Uma variável, constante ou função é undefined quando ela ainda não foi declarada. Quando uma variável é utilizada sem que tenha sido declarada o script é encerrado com um erro. 
+
+
+### Observações 
+
+```` java script
+// tipagem double vs float
+let num1 = 0.1
+let num2 = 0.2
+
+console.log(num1 + num2) // resultado esperado: 0.3, mas o resultado é 0.30000000000000004
+
+// para resolver esse problema, podemos usar a função toFixed() para arredondar o resultado para um número específico de casas decimais
+let resultado = (num1 + num2).toFixed(2)
+console.log(resultado) // resultado: 0.30
+
+// outra forma de resolver esse problema é multiplicar os números por 100, realizar a operação e depois dividir o resultado por 100
+let resultado2 = ((num1 * 100) + (num2 * 100)) / 100
+console.log(resultado2) // resultado: 0.3
+````
