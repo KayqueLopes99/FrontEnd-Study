@@ -1,6 +1,15 @@
 ## Metodos de String
 Em JavaScript, métodos de string são funções embutidas que nos permitem manipular textos facilmente. **Um detalhe crucial:** métodos de string não modificam a string original (strings são imutáveis em JS); eles sempre retornam uma *nova* string.
 
+> Template strings:
+```javascript
+const nome = "Kayque";
+const saudacao = `Olá, ${nome}! Bem-vindo ao mundo do JavaScript!`;
+console.log(saudacao); // Resultado: "Olá, Kayque! Bem-vindo ao mundo do JavaScript!"
+```
+
+
+
 ---
 ### 1. `toUpperCase()`
 * **Definição:** Converte todos os caracteres da string para letras maiúsculas.
