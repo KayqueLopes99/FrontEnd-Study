@@ -1,9 +1,15 @@
 # Introdução ao HTML
+- Docs:
+
+> https://developer.mozilla.org/pt-BR/docs/Web/HTML
 
 ##  Definição
 
 HTML (**HyperText Markup Language**) é a linguagem de marcação usada para **estruturar páginas web**.
 Ele define os elementos que aparecem no site, como textos, imagens, links e formulários.
+- Hierarquia, forma, ordem e semântica dos elementos da página.
+
+> **Front-end**: a parte visual da aplicação, ou seja, a parte com a qual o usuário interage. (HTML, CSS e JS)
 
 > Estrutura básica
 
@@ -14,6 +20,8 @@ Ele define os elementos que aparecem no site, como textos, imagens, links e form
   <meta charset="UTF-8">
   <title>Minha Página</title>
 </head>
+
+<!-- O que aparece na página -->
 <body>
   <h1>Olá mundo</h1>
   <p>Meu primeiro site</p>

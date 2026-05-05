@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários no HTML</title>
+</head>
+
+<body>
+
+
+    <main>
+        <h1>Formulários</h1>
+        <hr>
+        <br>
+        <!--Formulário-->
+        <form action="">
+
+
+            <div>
+                <label for="texto">Input de Texto</label>
+                <!--Entrada e seu tipo-->
+                <input type="text" id="texto" placeholder="Informe alguma  palavra.." value="Kayque" name="nome">
+            </div>
+
+            <div>
+                <label for="numero">Input de Número Real</label>
+                <!--Entrada para números reais-->
+                <input type="number" id="numero" step="any" placeholder="Informe algum número..." name="numero">
+            </div>
+
+            <div>
+                <label for="senha">Input de Senha</label>
+                <!--Entrada para senha-->
+                <input type="password" id="senha" placeholder="Informe sua senha..." name="senha">
+            </div>
+
+            <div>
+                <label for="email">Input de Email</label>
+                <!--Entrada para email-->
+                <input type="email" id="email" placeholder="Informe seu email..." name="email">
+            </div>
+
+            <div>
+                <label for="data-nascimento">Input de Data de Nascimento</label>
+                <!--Entrada para data de nascimento-->
+                <input type="date" id="data-nascimento" name="data-nascimento">
+            </div>
+
+            <div>
+                <label for="time">Input de hora</label>
+                <!--Entrada para data de nascimento-->
+                <input type="time" id="time" name="time">
+            </div>
+
+            <div>
+                <label for="time">Input de hora e dia</label>
+                <!--Entrada para data de nascimento-->
+                <input type="datetime-local" id="time-dia" name="time-dia">
+            </div>
+
+            <div>
+                <label for="file">Input de Arquivo</label>
+                <input type="file" id="file" name="file">
+            </div>
+
+            <div>
+                <label for="url">Input de URL</label>
+                <input type="url" id="url" name="url" placeholder="Informe uma URL...">
+            </div>
+
+            <div>
+                <label for="cor">Input de cor</label>
+                <input type="color" id="cor" name="cor">
+            </div>
+
+            <div>
+                <label for="range">Input de Range</label>
+                <input type="range" id="range" name="range" min="1" max="1000">
+            </div>
+
+            <div>
+                <label for="checkbox">Input de checkbox</label>
+                <input type="checkbox" id="checkbox" name="checkbox" checked>
+            </div>
+
+            <div>
+                <label for="clear">Input de limpar</label>
+                <input type="reset" value="Reset" id="clear" name="clear">
+            </div>
+
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+
+            <!--Caixa de Letras-->
+            <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+
+            <!--Seleção-->
+            <div>
+                <label for="select">Seleção</label>
+                <select name="select" id="select">
+                    <option value="" disabled>Selecione uma das opções...</option>
+                    <option value="opcao1">Opção 1</option>
+                    <option value="opcao2">Opção 2</option>
+                    <option value="opcao3">Opção 3</option>
+                    <option value="opcao4">Opção 4</option>
+                    <option value="opcao5">Opção 5</option>
+                    <option value="opcao6">Opção 6</option>
+                </select>
+            </div>
+            
+</body>
+
+</html>
