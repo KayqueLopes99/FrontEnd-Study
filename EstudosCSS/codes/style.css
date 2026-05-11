@@ -1,0 +1,111 @@
+/* O asterisco (*) é o "Seletor Universal". 
+   Ele aplica essas regras a TODOS os elementos do site. */
+* {
+    /* Zera a margem externa padrão que os navegadores aplicam */
+    margin: 0;
+
+    /* Zera o preenchimento interno padrão de todos os elementos */
+    padding: 0;
+}
+
+/* Regras aplicadas a todos os títulos principais (Tag <h1>) */
+h1 {
+    /* Define a cor do texto usando o sistema RGB (Vermelho, Verde, Azul) */
+    color: rgb(52, 105, 61);
+
+    /* Define a cor de fundo apenas do espaço ocupado pelo <h1> */
+    background-color: rgb(172, 234, 213);
+
+    /* Define o tamanho da fonte. 
+       Atenção: faltou a unidade de medida aqui! O correto seria algo como "96px" ou "96pt" */
+    font-size: 96px;
+
+    /* Define a espessura (peso) da fonte. 900 deixa o texto bem "gordinho" (Extra Bold) */
+    font-weight: 900;
+
+    /* Alinha o texto exatamente no centro da tela/caixa */
+    text-align: center;
+
+    /* Aplica o estilo itálico (inclinado) à fonte */
+    font-style: italic;
+
+    /* Adiciona uma decoração ao texto, neste caso, um sublinhado (linha embaixo) */
+    text-decoration: underline;
+
+    /* Transforma todo o texto em letras MAIÚSCULAS, independentemente de como foi digitado no HTML */
+    text-transform: uppercase;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Regras aplicadas aos subtítulos (Tag <h2>) */
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    /* Apenas centraliza o texto do subtítulo */
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Regras aplicadas a todos os parágrafos de texto (Tag <p>) */
+p {
+    /* Define o tamanho da fonte do texto para 18 pixels */
+    font-size: 18px;
+
+    /* Justifica o texto, fazendo com que ele fique alinhado tanto na margem esquerda quanto na direita (como em jornais) */
+    text-align: justify;
+
+    /* Cria um recuo (parágrafo) de 90 pixels apenas na primeira linha do texto */
+    text-indent: 90px;
+}
+
+/* Regras aplicadas a qualquer elemento HTML que tenha a classe "bg-image" (ex: <div class="bg-image">) */
+.bg-image {
+    /* Define uma cor de fundo bege. Isso é útil como "plano B" caso a imagem demore a carregar ou o link quebre */
+    background-color: beige;
+
+    /* Define que a altura dessa caixa será de 500 pixels */
+    height: 500px;
+
+    /* Define que a largura da caixa ocupará 100% do espaço disponível na tela */
+    width: 100%;
+
+    /* Insere uma imagem de fundo buscando através do link (URL) do Unsplash */
+    background-image: url("https://plus.unsplash.com/premium_photo-1778116512884-d5bef3e75b86?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyMHx8fGVufDB8fHx8fA%3D%3D");
+
+    /* Ajusta a imagem para que ela caiba inteira dentro da caixa (contain), mesmo que sobrem espaços vazios nas laterais */
+    background-size: contain;
+
+    /* Impede que a imagem crie um padrão de repetição (mosaico) para preencher o espaço restante */
+    background-repeat: no-repeat;
+
+    /* Centraliza a imagem tanto na vertical quanto na horizontal dentro da caixa */
+    background-position: center;
+
+    /* Deixa a imagem fixa no fundo. Quando você rolar a página para baixo, a imagem ficará parada (cria um efeito Parallax bem legal) */
+    /*background-attachment: fixed;*/
+}
+
+:root {
+    font-size: 62.5%;
+
+}
+
+a:visited {
+    color: rgb(22, 14, 175);
+}
+
+a {
+    font-size: 2.4em;
+    text-align: center;
+    color: rgb(255, 0, 0);
+
+}
+
+
+a:hover{
+    color: coral;
+}
