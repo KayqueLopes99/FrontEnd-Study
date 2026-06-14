@@ -91,21 +91,21 @@ p {
 
 :root {
     font-size: 62.5%;
-
 }
 
-a:visited {
-    color: rgb(22, 14, 175);
-}
-
+/* 1. L: Estado Padrão (Vem primeiro!) */
 a {
     font-size: 2.4em;
     text-align: center;
     color: rgb(255, 0, 0);
-
 }
 
+/* 2. V: Visitado (Vem depois do padrão) */
+a:visited {
+    color: rgb(22, 14, 175);
+}
 
-a:hover{
+/* 3. H: Hover (Vem depois do visitado) */
+a:hover {
     color: coral;
 }
