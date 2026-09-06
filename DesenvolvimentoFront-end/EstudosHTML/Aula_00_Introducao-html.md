@@ -31,6 +31,14 @@ Ele define os elementos que aparecem no site, como textos, imagens, links e form
 
 ---
 
+## Comentarios
+
+```html
+<!-- Este é um comentário -->
+<!-- Comentários não aparecem na página -->
+
+
+
 ## Principais tags
 
 ### Títulos

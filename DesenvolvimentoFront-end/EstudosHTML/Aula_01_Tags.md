@@ -28,7 +28,7 @@ Um elemento completo geralmente é formado por três partes:
 
 *   **Tipos de Elementos:** Cada um tem uma função (botão, parágrafo, imagem, lista, tabela).
 *   **Aninhamento:** A maioria dos elementos permite que você coloque outros elementos dentro deles (como colocar um link dentro de um parágrafo).
-*   **Tags Autocontidas (Self-closing):** Algumas tags não precisam de fechamento porque não envolvem um texto, como a tag de imagem ou de quebra de linha. Elas se fecham nelas mesmas.
+*   **Tags Autocontidas (Self-closing):** Algumas tags não precisam de fechamento porque não envolvem um texto, como a tag de imagem ou de quebra de linha. Elas se fecham nelas mesmas. ex: input, img, br, hr.
 
 ---
 
