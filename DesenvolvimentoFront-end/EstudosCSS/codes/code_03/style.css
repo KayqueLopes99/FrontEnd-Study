@@ -1,0 +1,27 @@
+h1 {
+   background-color: #6cce8c; 
+}
+
+div {
+    background-color: #afccb9;
+}
+
+li{
+    background-color: #e6f0e8;
+}
+
+#id1 {
+    background-color: #50795867;
+}
+
+.classe1 {
+    background-color: #a599d867;
+}
+
+* {
+    font-family: times new roman;
+}
+
+[data-seletor="atributo"] {
+    background-color: #75c485;
+}

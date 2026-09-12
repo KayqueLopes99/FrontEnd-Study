@@ -1,7 +1,3 @@
-Perfeito. Com base nas suas anotações, organizei uma explicação introdutória de **CSS** de forma didática, com **definição**, **sintaxe** e **exemplo** para cada comando.
-
----
-
 # Introdução ao CSS
 
 CSS (**Cascading Style Sheets**) é a linguagem usada para **estilizar páginas web**, ou seja, definir cores, tamanhos, fontes, espaçamentos e aparência dos elementos em um documento HTML.
