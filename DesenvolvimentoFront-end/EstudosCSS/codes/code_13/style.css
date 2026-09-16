@@ -1,0 +1,80 @@
+#origin1 {
+    width: 300px;
+    height: 350px;
+    background-image: url("https://i.pinimg.com/736x/2a/f4/ba/2af4ba3347bee4a6d1d52711b035a4d5.jpg");
+    background-size: 100px;
+    background-origin: padding-box;
+    background-repeat: no-repeat;
+    padding: 150px;
+}
+
+#origin2 {
+    width: 300px;
+    height: 350px;
+    background-image: url("https://i.pinimg.com/736x/2a/f4/ba/2af4ba3347bee4a6d1d52711b035a4d5.jpg");
+    background-size: 100px;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+}
+
+#origin3 {
+    width: 300px;
+    height: 350px;
+    background-image: url("https://i.pinimg.com/736x/2a/f4/ba/2af4ba3347bee4a6d1d52711b035a4d5.jpg");
+    background-size: 100px;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+
+#clip1 {
+    width: 300px;
+    height: 350px;
+    background-image: url("https://i.pinimg.com/736x/2a/f4/ba/2af4ba3347bee4a6d1d52711b035a4d5.jpg");
+    background-size: 100px;
+    background-origin: padding-box;
+    background-repeat: no-repeat;
+    padding: 150px;
+    background-clip: padding-box;
+}
+
+#clip2 {
+    width: 300px;
+    height: 350px;
+    background-image: url("https://i.pinimg.com/736x/2a/f4/ba/2af4ba3347bee4a6d1d52711b035a4d5.jpg");
+    background-size: 100px;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+}
+
+#clip3 {
+    -webkit-background-clip: text;
+    width: 300px;
+    height: 350px;
+    background-image: url("https://i.pinimg.com/736x/2a/f4/ba/2af4ba3347bee4a6d1d52711b035a4d5.jpg");
+    background-size: 100px;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+}
+
+#mesclagem1 {
+    
+    width: 300px;
+    height: 350px;
+    background-image: url("https://i.pinimg.com/736x/2a/f4/ba/2af4ba3347bee4a6d1d52711b035a4d5.jpg");
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-color: blue;
+}
+
+#back1 {
+    
+    width: 300px;
+    height: 550px;
+    background-image: url("https://i.pinimg.com/736x/2a/f4/ba/2af4ba3347bee4a6d1d52711b035a4d5.jpg");
+    background-color: aliceblue;    
+
+}

@@ -1,0 +1,29 @@
+#attachment1 {
+    width: 300px;
+    height: 350px;
+    background-image: url("https://i.pinimg.com/736x/6d/bf/e6/6dbfe63448e5c95a5a4a1815a4047e9c.jpg");
+    background-size: 100px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    border: 1px solid purple;
+}
+
+#attachment2 {
+    width: 300px;
+    height: 350px;
+    background-image: url("https://i.pinimg.com/736x/6d/bf/e6/6dbfe63448e5c95a5a4a1815a4047e9c.jpg");
+    background-size: 100px;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    border: 1px solid purple;
+}
+
+#attachment3 {
+    width: 300px;
+    height: 350px;
+    background-image: url("https://i.pinimg.com/736x/6d/bf/e6/6dbfe63448e5c95a5a4a1815a4047e9c.jpg");
+    background-size: 100px;
+    background-attachment: local;
+    background-repeat: no-repeat;
+    border: 1px solid purple;
+}

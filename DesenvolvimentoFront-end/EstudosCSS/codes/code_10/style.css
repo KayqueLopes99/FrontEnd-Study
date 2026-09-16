@@ -1,0 +1,49 @@
+#repeat1 {
+    width: 300px;
+    height: 350px;
+    background-image: url("https://i.pinimg.com/736x/be/56/b9/be56b9f2a605d1a7b5841b6d48419a4f.jpg");
+    background-size: 100px;
+    background-repeat: repeat;
+}
+
+#repeat2 {
+    width: 300px;
+    height: 350px;
+    background-image: url("https://i.pinimg.com/736x/be/56/b9/be56b9f2a605d1a7b5841b6d48419a4f.jpg");
+    background-size: 100px;
+    background-repeat: repeat-x;
+    border: 1px solid red;
+}
+
+#repeat3 {
+    width: 300px;
+    height: 350px;
+    background-image: url("https://i.pinimg.com/736x/be/56/b9/be56b9f2a605d1a7b5841b6d48419a4f.jpg");
+    background-size: 100px;
+    background-repeat: space;
+    border: 1px solid red;
+    
+    
+}
+
+#repeat4 {
+    width: 300px;
+    height: 350px;
+    background-image: url("https://i.pinimg.com/736x/be/56/b9/be56b9f2a605d1a7b5841b6d48419a4f.jpg");
+    background-size: 100px;
+    background-repeat: round;
+    border: 1px solid red;
+    
+    
+}
+
+#repeat4 {
+    width: 300px;
+    height: 350px;
+    background-image: url("https://i.pinimg.com/736x/be/56/b9/be56b9f2a605d1a7b5841b6d48419a4f.jpg");
+    background-size: 100px;
+    background-repeat: no-repeat;
+    border: 1px solid red;
+    
+    
+}
