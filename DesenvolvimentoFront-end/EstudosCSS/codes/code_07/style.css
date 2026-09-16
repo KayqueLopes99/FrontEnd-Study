@@ -1,0 +1,35 @@
+#cores-predefinidas {
+   color: blue;
+   border: 2px solid cornflowerblue;
+}
+
+#rgb{
+    color:rgb(99, 42, 6);
+}
+
+li {
+    color: rgb(0, 0, 0);
+}
+
+body{
+    color: rgb(0, 0, 0);
+    background-color: rgb(109, 168, 219);
+}
+
+
+#rgba {
+    color: rgba(255, 30, 180, 1.0)
+}
+
+#hexadecimal{
+    color: #34567e
+}
+
+#hsl{
+    color:hsl(281, 28%, 29%)
+}
+
+#hsla{
+    color: hsla(102, 102, 100, 134)
+    
+}

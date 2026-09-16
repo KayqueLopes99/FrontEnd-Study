@@ -1,0 +1,9 @@
+#pokemon-pikachu {  
+    background-color: antiquewhite;
+    background-image: linear-gradient(#ddb64a, #dd9d4a, #dd4a4a), url('https://i.pinimg.com/736x/75/fe/14/75fe14cebb9c7e5cfaa43f64243e58ed.jpg');
+}
+
+
+#pokemon-charizard {
+    background-size: contain, cover;
+}

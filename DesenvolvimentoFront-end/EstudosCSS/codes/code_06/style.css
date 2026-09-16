@@ -1,0 +1,36 @@
+div {
+    background-color: #afccb9;
+    width: auto;
+    height: auto;
+    
+    padding: 20px;
+    margin: 20px;
+    
+}
+
+div.conteudo {
+    min-height: 100px;
+    max-height: 500px;
+
+    min-width: auto;
+    max-width: auto;
+    background: burlywood;
+}
+
+.exemplo {
+            background-color: #dbeafe; 
+            border: 2px solid #2563eb; /* Define uma borda azul de 2px. */
+            margin-top: 10px; /* Define a margem superior. */
+            margin-right: 20px; /* Define a margem direita. */
+            margin-bottom: 30px; /* Define a margem inferior. */
+            margin-left: 40px; /* Define a margem esquerda. */
+            
+            padding-top: 10px; /* Define o espaçamento interno superior. */
+            padding-right: 20px; /* Define o espaçamento interno direito. */
+            padding-bottom: 30px; /* Define o espaçamento interno inferior. */
+            padding-left: 40px; /* Define o espaçamento interno esquerdo. */
+        }
+
+* {
+	box-sizing: border-box;
+}

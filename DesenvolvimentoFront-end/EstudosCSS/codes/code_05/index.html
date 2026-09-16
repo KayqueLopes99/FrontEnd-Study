@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site 05</title>
+    <style>
+        *{
+            margin: 10;
+            padding: 10;
+        }
+        /* Combinador descendente: seleciona todos os <span> dentro de <div>. */
+        div span {
+            color: blue;
+            font-weight: bold;
+        }
+
+        /* Combinador filho: seleciona apenas os <span> filhos diretos de <div>. */
+        div > span {
+            color: green;
+        }
+
+        /* Combinador irmão geral: seleciona <p> após outro <p>, mesmo com outros elementos entre eles. */
+        p ~ p {
+            color: rgb(148, 131, 36);
+            background-color: rgb(151, 223, 252);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Este <span>span</span> é descendente da div.</p>
+        <span>Este span é filho direto da div.</span>
+        <p>Este parágrafo é irmão adjacente do parágrafo anterior.</p>
+    </div>
+</body>
+</html>

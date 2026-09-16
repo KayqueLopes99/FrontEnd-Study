@@ -1,0 +1,12 @@
+#object-fit img {
+    width: 200px; 
+    height: 300px; 
+    object-fit: fill; 
+}
+
+#object-position img {
+     width: 300px; 
+     height: 500px; 
+     object-fit: cover; 
+     object-position: right top;
+}
